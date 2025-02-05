@@ -1,0 +1,148 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700&display=swap);
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body,
+html {
+  font-family: Lato, sans-serif;
+  margin: 0;
+  height: 100%;
+}
+#app {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 10px;
+  position: relative;
+}
+#app.embed {
+  overflow: hidden;
+}
+header {
+  position: absolute;
+  right: 20px;
+}
+h1 {
+  margin: 0;
+}
+h2 {
+  margin: 0.5em 0;
+}
+main,
+main > section {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+main > section {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 10px;
+}
+.col1 {
+  max-width: 30%;
+}
+footer {
+  font-size: 0.8em;
+}
+#tree {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.highlighted {
+  background-color: #ff0;
+}
+iframe {
+  display: none;
+}
+.input-wrap {
+  position: relative;
+}
+.input,
+.selector {
+  font-size: 28px;
+  line-height: 36px;
+  font-family: monospace;
+  padding: 10px;
+}
+.input {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  resize: none;
+  outline: none;
+  overflow: hidden;
+}
+.html-input,
+.input {
+  width: 100%;
+  color: #fff;
+}
+.html-input {
+  min-height: 56px;
+  background: #002b36;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.html-input:active,
+.html-input:focus,
+.input:active,
+.input:focus {
+  -webkit-box-shadow: 0 0 10px #00171d;
+  box-shadow: 0 0 10px #00171d;
+}
+.selector {
+  min-height: 56px;
+  background: #002b36;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.specificity span {
+  height: 42px;
+  width: 42px;
+  display: inline-block;
+  line-height: 42px;
+  border-radius: 50%;
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin: 2px;
+}
+.selector .type-a {
+  color: #a92b68;
+}
+.selector .type-a,
+.specificity .type-a {
+  background: #a92b68;
+}
+.selector .type-b {
+  color: #1e6fa8;
+}
+.selector .type-b,
+.specificity .type-b {
+  background: #1e6fa8;
+}
+.selector .type-c {
+  color: #22817a;
+}
+.selector .type-c,
+.specificity .type-c {
+  background: #22817a;
+}
